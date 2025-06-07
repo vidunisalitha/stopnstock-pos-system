@@ -27,6 +27,18 @@ public class UsersModel {
     public UsersModel() {
     }
 
+    public UsersModel(String fname, String lname, String role, Date bDay, String phone, String address, String email, String password, Date hireDate) {
+        this.fname = fname;
+        this.lname = lname;
+        this.role = role;
+        this.bDay = bDay;
+        this.phone = phone;
+        this.address = address;
+        this.email = email;
+        this.password = password;
+        this.hireDate = hireDate;
+    }
+
     public UsersModel(int uid, String fname, String lname, String role, Date bDay, String phone, String address, String email, String password, Date hireDate, boolean isActive, Timestamp createdAt) {
         this.uid = uid;
         this.fname = fname;
@@ -41,6 +53,8 @@ public class UsersModel {
         this.isActive = isActive;
         this.createdAt = createdAt;
     }
+    
+    
 
     public int getUid() {
         return uid;

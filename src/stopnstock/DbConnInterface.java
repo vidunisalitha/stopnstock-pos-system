@@ -12,6 +12,8 @@ package stopnstock;
 public interface DbConnInterface {
     String driver ="com.mysql.cj.jdbc.Driver";
     String url="jdbc:mysql://localhost:3306/stopnstock";
-    String user="root";
+    String usr="root";
     String pass="Pass@123";
+    
+    void getConnection();
 }

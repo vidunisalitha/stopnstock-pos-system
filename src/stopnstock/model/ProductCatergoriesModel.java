@@ -15,6 +15,10 @@ public class ProductCatergoriesModel {
     public ProductCatergoriesModel() {
     }
 
+    public ProductCatergoriesModel(String cname) {
+        this.cname = cname;
+    }
+    
     public ProductCatergoriesModel(int cid, String cname) {
         this.cid = cid;
         this.cname = cname;

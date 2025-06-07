@@ -19,6 +19,15 @@ public class SaleItemsModel {
     public SaleItemsModel() {
     }
 
+    public SaleItemsModel(int sid, int pid, int qty, double unitPrice, double subtotal) {
+        this.sid = sid;
+        this.pid = pid;
+        this.qty = qty;
+        this.unitPrice = unitPrice;
+        this.subtotal = subtotal;
+    }
+
+    
     public SaleItemsModel(int siid, int sid, int pid, int qty, double unitPrice, double subtotal) {
         this.siid = siid;
         this.sid = sid;

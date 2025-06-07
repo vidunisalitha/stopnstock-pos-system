@@ -20,6 +20,14 @@ public class InventoryLogsModel {
     public InventoryLogsModel() {
     }
 
+    public InventoryLogsModel(int pid, String changeType, int qty, String note) {
+        this.pid = pid;
+        this.changeType = changeType;
+        this.qty = qty;
+        this.note = note;
+    }
+
+    
     public InventoryLogsModel(int lid, int pid, String changeType, int qty, String note, Timestamp changedAt) {
         this.lid = lid;
         this.pid = pid;

@@ -20,6 +20,14 @@ public class ProductsModel {
     public ProductsModel() {
     }
 
+    public ProductsModel(String pname, String description, double price, double costPrice, int cid) {
+        this.pname = pname;
+        this.description = description;
+        this.price = price;
+        this.costPrice = costPrice;
+        this.cid = cid;
+    }
+    
     public ProductsModel(int pid, String pname, String description, double price, double costPrice, int stockQty, int cid) {
         this.pid = pid;
         this.pname = pname;

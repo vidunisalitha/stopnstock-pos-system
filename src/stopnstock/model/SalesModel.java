@@ -19,6 +19,12 @@ public class SalesModel {
     public SalesModel() {
     }
 
+    public SalesModel(double total, String payMethod, int uid) {
+        this.total = total;
+        this.payMethod = payMethod;
+        this.uid = uid;
+    }
+    
     public SalesModel(int sid, double total, String payMethod, Timestamp saleTime, int uid) {
         this.sid = sid;
         this.total = total;
